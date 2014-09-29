@@ -141,7 +141,7 @@ The bootstrap grid is based on 12 columns that can are accessible using by placi
 * col-md <1200px
 * col-lg >1200px
 
-<div class ="row"> Here is an example of an two column layout.
+Here is an example of an two column layout.
 
 ```
 <div class="row">
