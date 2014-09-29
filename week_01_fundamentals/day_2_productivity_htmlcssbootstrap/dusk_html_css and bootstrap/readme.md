@@ -75,9 +75,9 @@ When you want to move elements around the page or set their position so that the
 
 ### Box Model (margin, padding, border)
 
-Although we don't use tables anymore to design our site, we can still think of the layout of a page as a series of boxes. This thought process is the foundation of the box model, which is an essential principle in CSS that helps us create layouts and define width and height. The box model encompases width and height along with padding, border and __not__ margin.
+Although we don't use tables anymore to design our site, we can still think of the layout of a page as a series of boxes. This thought process is the foundation of the box model, which is an essential principle in CSS that helps us create layouts and define width and height. The box model encompases width and height along with padding, border and __not__ margin. Here is a good visual to help:
 
-SHOW DIAGRAM OF THE BOX MODEL HERE
+![The Box Model](http://guistuff.com/css/images/boxmodel.png)
 
 To calculate the true width/height include the padding and border
 
