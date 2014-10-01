@@ -9,7 +9,7 @@ Logical branching & repeating code.
 1. [if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 2. [while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
 3. [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-4. [for..in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+4. [for...in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
 
 ### If ###
 
@@ -92,9 +92,9 @@ for (var i = 0; i < foods.length; i++) {
 }
 ```
 
-### For..in ###
+### For...in ###
 
-A **for..in** loop is similar to a **for loop**, but good for looping
+A **for...in** loop is similar to a **for loop**, but good for looping
 through all the key-value pairs in an Object.
 
 ```
