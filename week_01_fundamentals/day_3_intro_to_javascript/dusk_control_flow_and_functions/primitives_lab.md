@@ -2,6 +2,7 @@
 
 1.) Find the last name in the following array:
 
+```
 var friends = [
                 'Moe', 
                 'Larry', 
@@ -16,23 +17,31 @@ var friends = [
                 'Lydia',
                 'Harriet'
               ];
-Add your name to the end of the friends and add another name to beginning. Change the Elizabeth to Liz.
+```
 
-2.) Sort the list of friends above.
+Add your name to the end of the `friends` and add another name to beginning. Change the `Elizabeth` to `Liz`.
 
-3.) Here are a list of ages
+2.) Sort the list of `friends` above.
 
+3.) Here are a list of `ages`
+
+```
 var ages = [83, 53, 37, 29, 60, 30, 66, 19, 59, 41, 9, 64, 19, 80, 24, 53, 70, 1, 53, 40, 92, 4, 71, 65, 8, 2, 51, 80, 94, 37, 80, 64, 19, 6, 14];
 
-find the median age.
+```
+find the `median` age.
 
 4.) There are a list of names in a string, below. How could we sort them? Hint: use string and array methods.
-
+ 
+```
 var friends = "Moe,Larry,Curly,Jane,Emma,Elizabeth,Elinor,Mary,Darcy,Grey,Lydia,Harriet";
-5.) List all the friends above in reverse alphabetical order.
+```
+
+5.) List all the `friends` above in reverse alphabetical order.
 
 6.) We have two lists of friends below:
 
+```
 var myFriends = [
                   'Rickon',
                   'Meera',
@@ -57,10 +66,14 @@ var yourFriends = [
                     'Legolas',
                     'Pippin'
                   ];
+```
+
 we need to combine them into one list and sort them.
 
-7.) I have a list of favorite foods below. If Popcorn is my favorite food and Potato chips my second favorite, then how would you find the rank of another food. Try Pho.
+7.) I have a list of favorite foods below. If `Popcorn` is my favorite food and `Potato chips` my second favorite, then how would you find the rank of another food. Try `Pho`.
 
+
+```
 
 var foods = [
               'Popcorn',
@@ -84,12 +97,16 @@ var foods = [
               'Pizza'
             ];
 
-8.) I made a mistake with my favorite foods. How can I find the index of Donuts and remove it? (Hint: look up splice)
+```
 
-9.) My friends want to know what my 5th to 10th favorite foods are.
+
+8.) I made a mistake with my favorite foods. How can I find the index of `Donuts` and remove it? **(Hint: look up `splice`)**
+
+9.) My friends want to know what my `5`th to `10`th favorite foods are.
 
 10.) How would you create an array that efficiently stored the following information:
 
+```
   'Moe' is 18
   'Larry' is 19
   'Curly' is 20
@@ -103,18 +120,24 @@ var foods = [
   'Lydia' is 24
   'Harriet' is 18
 
+```
 
 ##Object Exercises
 
-1.) How would you represent the following using and object literal. Then update john's address to 1234 Park ln.
+1.) How would you represent the following using and object literal. Then update `john's` address to `1234 Park ln`.
 
+````
 
 John, Doe, 36, 1234 Park st.
 
-(Hint: think in terms of firstname, lastname, age, address)
+````
+**(Hint: think in terms of firstname, lastname, age, address)**
+
 
 2.) Using a combination of Objects and Array, how would you represent the following:
 
+
+```
   Moe, Doe, 31, 1234 Park st.
   Larry, Doe, 36, 1234 Spark st.
   Curly, Doe, 36, 1239 Park st.
@@ -128,3 +151,4 @@ John, Doe, 36, 1234 Park st.
   Lydia, Doe, 30, 1294 Park st.
   Harriet, Doe, 32, 1324 Park st.
 
+```
