@@ -35,6 +35,8 @@ if (x === 5) {
 }
 ```
 
+__If / Else__
+
 ```
 var isTasty;
 var food = "vegetables";
@@ -46,6 +48,8 @@ if (food === "pizza") {
 }
 console.log("Is the food tasty?", isTasty);
 ```
+
+__If / Else If / Else__
 
 ```
 var course = "wdi";
