@@ -124,6 +124,19 @@ Using the `new` keyword, Javascript does a few things.
 
 ====
 
+### Testing our Constructors:
+
+When using mocha to test our constructors include this code to create a new instance of our class in your spec/test.js file:
+
+```
+var elie;
+
+// create a new Person each time 
+ beforeEach(function(){
+    elie = new Person('Elie', 'Schoppik');
+  });
+```
+
 ## Prototypes
 
 One of the more complex concepts in JavaScript to wrap your head around is the idea of a Prototype. You can think of a Prototype as the building block for your object (and remember that everything in JavaScript is an object). For any object you create, you can attach methods and properties to it's prototype. So in our constructor functions, we can attach methods and properties to the prototype so that every object we create from it will have these properties and methods! 
