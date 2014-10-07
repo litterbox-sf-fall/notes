@@ -178,4 +178,4 @@ So...these both work, but how are they different, and which one is better? The a
 
 
 
-Let's now take this a step further - how is it that an Array has the methods (length, map, forEach and so many more)? How does every object have a toString() or hasOwnProperty method? The answer is, that these methods are part of that object's Prototype. Even further, Objects can inherit properties and methods from other objects (that's how the Boolean and Number object have the toString() method.)
+Let's now take this a step further - how is it that an Array has the methods (length, map, forEach and so many more)? How does every object have a toString() or hasOwnProperty method? The answer is, that these methods are part of that object's Prototype. Even further, Objects can inherit properties and methods from other objects (that's how the Boolean and Number object have the toString() method.) - the answer to this question will be explored more tomorrow when we discuss inheritance.
