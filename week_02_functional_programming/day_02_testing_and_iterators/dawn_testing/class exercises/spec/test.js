@@ -41,10 +41,10 @@ describe("merge", function(){
   it("Should merge two empty arrays", function(){
     expect(myFunctions.merge([],[])).to.eql([]);
   });
-  it("should merge two empty arrays using empty", function(){
+  it("should merge two empty arrays using Chai's .empty", function(){
     expect(myFunctions.merge([],[])).to.be.empty;
   });
-  it("should include all the numbers", function(){
+  it("should include all the numbers using Chai's .include", function(){
     expect(myFunctions.merge([1,2,3],[1,2])).to.include(1,2,3,7);
   });
 });

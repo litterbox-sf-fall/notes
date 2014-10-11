@@ -4,6 +4,7 @@ Let's use the Sources tab to examine this code!
 
 ```
 var testFunction = function(){
+	 var x = "foo";
     console.log("SWEET!");
   }
   var arr = [1,2,3,4,5,6,7,8,9,10];
@@ -14,7 +15,7 @@ var testFunction = function(){
        newArr.push(arr[i]*2);
        taco += i;
   }
-  var x = "foo";
+console.log(x)
 ```
 
 In the sources tab, we have 5 icons that help us debug our code and see what's going on. From the left to the right:
@@ -106,11 +107,13 @@ var MYNAMESPACE = (function(){
   // PUT OUR PRIVATE METHODS ON THE TOP
 
   // This array should be private! This property will only belong to the function instead of directly to the namespace
-  var siblings = ["haim", "david", "tamar"]
+
+  var siblings = ["haim", "david", "tamar"];
 
 
   // a function to add siblings...but I don't want any more so let's keep that private! This method will only belong to the function instead of directly to the namespace
-   var addFriends = function(){},
+  
+   var addSiblings = function(){};
   // PUT OUR PUBLIC METHODS HERE IN AN OBJECT WHICH BECOMES THE NAMESPACE
 
 return {
@@ -119,9 +122,10 @@ return {
   friends: ["tim", "markus"],
 
   // a function manipulate my friends array - let's make that public
-  addFriends: function(){}
- 
- }
+  seeSiblings: function(){
+    console.log(siblings);
+  }
+ };
 })();
 ```
 
