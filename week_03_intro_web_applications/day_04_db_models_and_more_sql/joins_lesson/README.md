@@ -98,7 +98,7 @@ In our example, A is person and B is pet
 
 LEFT, RIGHT and FULL Joins are called OUTER joins. The OUTER keyword is optional.
 
-** `LEFT (OUTER) JOIN`: Fetches data if present in the left table **
+`LEFT (OUTER) JOIN`: Fetches data if present in the left table
 
 ```
 SELECT person.name, pet.name from person
@@ -114,7 +114,7 @@ SELECT person.name, pet.name from person
 ```
 
 
-** `FULL (OUTER) JOIN`: Fetches data if present in either of the two tables. ** 
+`FULL (OUTER) JOIN`: Fetches data if present in either of the two tables.
 
 ```
 SELECT person.name, pet.name FROM person 
@@ -130,7 +130,7 @@ SELECT person.name, pet.name FROM person
 ```
 
 
-** `RIGHT (OUTER) JOIN`: Fetches data if present in the right table. **  
+`RIGHT (OUTER) JOIN`: Fetches data if present in the right table.  
 
 ```
 SELECT person.name, pet.name FROM person 
@@ -145,7 +145,7 @@ SELECT person.name, pet.name FROM person
   ON person.id = pet.person_id;
 ```  
 
-** `Cross Join`:  Joins everything to everything ** 
+`Cross Join`:  Joins everything to everything
 
 ```
 SELECT person.name, pet.name FROM person
