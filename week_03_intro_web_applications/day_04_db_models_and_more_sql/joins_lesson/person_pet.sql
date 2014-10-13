@@ -20,8 +20,11 @@ CREATE TABLE pet (
   INSERT INTO person ( name, age)
         VALUES ('Zed', 37);
 
-   INSERT INTO person ( name, age)
+  INSERT INTO person ( name, age)
         VALUES ('Bobby', 7);
+
+  INSERT INTO person ( name, age)
+        VALUES ('John', 17);
 
   INSERT INTO pet (name, breed, age, person_id)
         VALUES ( 'Fluffy', 'Unicorn', 1000, 1);
@@ -29,11 +32,14 @@ CREATE TABLE pet (
   INSERT INTO pet (name, breed, age, person_id)
         VALUES ('Rocko', 'Dog', 4, 2);
 
- INSERT INTO pet (name, breed, age, person_id)
+  INSERT INTO pet (name, breed, age, person_id)
        VALUES ('Gigantor', 'Robot', 25, 1);
 
-INSERT INTO pet (name, breed, age, person_id)
+  INSERT INTO pet (name, breed, age, person_id)
        VALUES ('Goldy', 'Fish', 1, 2);
+
+  INSERT INTO pet (name, breed, age, person_id)
+      VALUES ('Czar', 'Cat', 10, 4);  
 
 
 \d+ person
