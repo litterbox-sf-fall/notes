@@ -74,96 +74,81 @@ INSERT INTO pet (name, breed, age, person_id)
 
 ```
 
-Doing our first Join
+###Doing our first Join 
 
-
-	SELECT * FROM person
-	INENR JOIN pet
-	ON person.id = pet.person_id;
+The most common case is **`INNER JOIN`: Fetches data if present in both the tables.**
 
 	SELECT person.name, pet.name from person
 	INNER JOIN pet 
 	ON person.id = pet.person_id;
 
+Note that the type-part of the JOIN clause is optional, in which case the default is INNER if you just specify JOIN. So this does exactly the same:
 
-**Other Types of Joins**  
+	SELECT person.name, pet.name from person
+	JOIN pet 
+	ON person.id = pet.person_id;
+
+
+###Other Types of Joins  
+
+In our example, A is person and B is pet
 
 ![SQL Joins Diagram](http://lh5.ggpht.com/-fnOQYPFr8D0/UagAzBIgMvI/AAAAAAAABbo/3fBL5Fm3Y9Y/SQL%252520JOINs.jpg)  
 
-Full Outer Join  
+
+LEFT, RIGHT and FULL Joins are called OUTER joins. The OUTER keyword is optional.
+
+** `LEFT (OUTER) JOIN`: Fetches data if present in the left table **
 
 ```
-SELECT * FROM person 
-  FULL OUTER JOIN pet
+SELECT person.name, pet.name from person
+  LEFT JOIN pet
   ON person.id = pet.person_id;
 ```
 
-Left Outer Join  
-
+```
+SELECT person.name, pet.name from person
+  LEFT JOIN pet
+  ON person.id = pet.person_id
+  WHERE pet.person_id IS NULL;
 ```
 
-SELECT * FROM person 
-  LEFT OUTER JOIN pet
+
+** `FULL (OUTER) JOIN`: Fetches data if present in either of the two tables. ** 
+
+```
+SELECT person.name, pet.name FROM person 
+  FULL JOIN pet
   ON person.id = pet.person_id;
-
 ```
 
-Right Outer Join  
-
+```
+SELECT person.name, pet.name FROM person 
+  FULL JOIN pet
+  ON person.id = pet.person_id
+  WHERE person.id IS NULL OR  pet.person_id IS NULL;
 ```
 
-SELECT * FROM person 
-  RIGHT OUTER JOIN pet
+
+** `RIGHT (OUTER) JOIN`: Fetches data if present in the right table. **  
+
+```
+SELECT person.name, pet.name FROM person 
+  RIGHT JOIN pet
+  ON person.id = pet.person_id
+  WHERE person.id IS NULL;
+```
+
+```
+SELECT person.name, pet.name FROM person 
+  RIGHT JOIN pet
   ON person.id = pet.person_id;
-
 ```  
 
-Left Outer Join with Where  
+** `Cross Join`:  Joins everything to everything ** 
 
 ```
-SELECT * FROM person
-  LEFT OUTER JOIN pet
-  ON person.id = pet.person_id
-  WHERE pet.breed = "unicorn";
-```
-
-Cross Join  
-
-```
-SELECT * FROM person
+SELECT person.name, pet.name FROM person
   CROSS JOIN pet
-  WHERE person.id = 1;
 ```
 
-####Exercise
-
-Students select information from tables with joins
-
-**Join Table**  
-
-    create table person (
-      id integer primary key,
-      name text,
-      age integer
-    );
-
-    create table pet (
-      id integer primary key,
-      name text,
-      age integer,
-      breed text,
-      dead integer
-    );
-
-    create table person_pet (
-      person_id integer,
-      pet_id integer 
-    );
-
-```sql
-SELECT * FROM person 
-    INNER JOIN person_pet
-    ON person.id = person_pet.person_id
-    INNER JOIN pet
-    ON person_pet.pet_id = pet.id;
-```
