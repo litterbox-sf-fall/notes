@@ -10,9 +10,9 @@ One of the __worst__ possible things you can do as a developer is store a passwo
 
 So how do we store passwords? We encrypt them. Before we talk about how that's done, let's examine different forms of encryption.
 
-- Two way encryption - think of something like gibberish or pig latin or even a simple code that you made up with a friend to send a secret message. The important thing here is that both parties know how to decifer a message. This is easy to use, but imagine if someone else gets access to the key or knows how to decifer the code. This is why we don't use two way encryption for passwords. The only person who should ever know their password is the person who created, so we need a different way - enter one way encryption
+- Two way encryption - think of something like gibberish or pig latin or even a simple code that you made up with a friend to send a secret message. The important thing here is that both parties know how to decipher a message. This is easy to use, but imagine if someone else gets access to the key or knows how to decipher the code. This is why we don't use two way encryption for passwords. The only person who should ever know their password is the person who created it, so we need a different way, so we use one way encryption
 
-- One way encryption - this is how we store passwords. This method also known as hashing and it only allows text to be deciphered by the person who knows the original text. For a password this is perfect. As developers we should never know or be able to figure out our users passwords. If they for some reason forget it, we just send them a link to reset the password.
+- One way encryption - this is how we store passwords. This method also known as hashing and it only allows text to be deciphered __only__ by the person who knows the original text. For a password this is perfect. As developers we should never know or be able to figure out our user's passwords. If they for some reason forget it, we just send them a link to reset the password - we never want to just give them their password back in plain text. 
 
 #### bcrypt
 
@@ -20,7 +20,7 @@ The tool we use to hash passwords is called bcrypt. Bcrypt is a module based on 
 
 #### Salting
 
-Not only is it important to hash a password, we need to add an additional layer of security and we do that by adding salt. Salting provides an extra hash at the end of our password which makes it much much more difficult for someone to crack our password by inputing random strings.
+Not only is it important to hash a password, we need to add an additional layer of security and we do that by adding salt. Salting provides an extra hash at the end of our password which makes it much much more difficult for someone to crack our password using brute force (trying again and again) or a lookup table.
 
 You can read more about this [here](https://crackstation.net/hashing-security.htm)
 
@@ -30,7 +30,7 @@ One of the most important concepts in building an application is authentication 
 
 #### Passport
 
-Passport is authentication middleware for express. It comes with a variety of "strategies" which enable us to build authentication using our own information (this is known as the "local" strategy) like a username or a password as well as leveraging other forms of authentication like OAuth (which enable us to log in via twitter, facebook, google, instagram etc.)
+Passport is authentication middleware for express. It comes with a variety of "strategies" which enable us to build authentication using our own information (this is known as the "local" strategy) like a username or a password as well as leveraging other forms of authentication like OAuth (which enable us to allow users to log in via twitter, facebook, google, instagram etc. The benefit of this is that we do not have to store usernames and passwords - we just leverage data from other sites that already have that information)
 
 #### Serializing and Deserializing
 
