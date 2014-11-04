@@ -1,6 +1,4 @@
- require 'spec_helper'
- require_relative '../grandparent'
- require_relative '../parent'
+require 'spec_helper'
 
 describe Child do
 
