@@ -37,8 +37,8 @@ describe Grandparent do
 
   describe "Adding to the family" do
     it "gets added to the family" do
-      @grandparent.addToFamily(@grandparent)
-      p Grandparent.family
+      # @grandparent.addToFamily(@grandparent)
+      # p Grandparent.family
       expect(Grandparent.showFamily.length).to eq(1)
     end
   end

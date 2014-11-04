@@ -6,6 +6,7 @@ class Grandparent
     @name = name
     @age = age
     @gender = gender
+    @@family << self
   end
 
   def self.grandchildren
@@ -14,10 +15,6 @@ class Grandparent
 
   def self.family
     @@family
-  end
-
-  def addToFamily(member)
-    @@family << member
   end
 
   def self.showFamily

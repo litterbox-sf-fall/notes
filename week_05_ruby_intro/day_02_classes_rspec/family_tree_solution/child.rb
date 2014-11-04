@@ -29,5 +29,4 @@ class Child < Parent
       "Wahhh!"
     end
   end
-
 end
