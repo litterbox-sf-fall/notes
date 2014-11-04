@@ -1,5 +1,4 @@
 # Intro to Classes
-## Methods, Variables, and All That
 
 Learning Objectives
 ====================
