@@ -74,4 +74,3 @@ describe "Startin" do
 1. Make sure you have done `rspec --init` so that you have a .rspec file and a spec folder with a spec_helper.rb file
 2. Did you mean to do require_relative instead of require?
 3. If you do use require_relative, make sure you have the exact path
-4. 
