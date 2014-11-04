@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Math do
+describe "Testing" do
 
   describe "Addition" do
     it "works" do
@@ -19,15 +19,15 @@ describe Math do
       expect(5).to eq(5)
     end
 
-    it "does something that fails" do
-      expect(5).to eq(3)
+    it "does something that passes using not" do
+      expect(5).to_not eq(3)
     end
 
-    it "does something that is pending", :pending => true do
+    xit "does something that is pending using xit", pending: true do
       expect(5).to be < 3
     end
 
-    it "does something that is skipped", :skip => true do
+    it "does something that is pending by specifying pending", pending: true do
       expect(5).to be < 3
     end
   end

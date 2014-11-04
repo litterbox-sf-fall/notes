@@ -1,12 +1,12 @@
 ## Family Tree Lab
 
-Create a grandparent, parent and child class. The parent should inherit from the grandparent and the child should inherit from the parent.
+For this lab you are going to use your knowledge of Classes, inheritance and rspec to build a small family tree app and pass a bunch of tests.
 
-Write methods to calculate the number of children for the grandparent and parent as well as the number of grandchildren for the parent. 
+## Getting started
 
-Write tests to ensure that these calculations are correct.
-
-Grandparents should have a name, age and gender and a method called shout which should print out "Grr" 
+1. Start working on the grandparent class tests and try to get them to pass one by one. To do this you will need to research how to test if something is an instance of a class. 
+2. 
+2. Move to the parent
 
 
 - Use super to efficiently create these classes
