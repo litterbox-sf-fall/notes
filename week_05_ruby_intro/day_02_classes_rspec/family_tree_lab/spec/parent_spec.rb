@@ -2,28 +2,24 @@ require 'spec_helper'
 
 describe Parent do
 
-  before(:each) do
-
+  before(:context) do
+    @parent = Parent.new("david",30,"male")
   end
+
 
   describe "Initialization" do
-    xit "is an instance of the Parent class" do
+    it "is an instance of the Parent class" do
 
     end
-    xit "is assigned a name" do
+    it "is assigned a name" do
 
     end
-    xit "is assigned an age" do
+    it "is assigned an age" do
 
     end
-    xit "is assigned a gender" do
-
-    end
-  end
-
-  describe "Adding to the family" do
-    xit "gets added to the family" do
+    it "is assigned a gender" do
 
     end
   end
+
 end

@@ -5,18 +5,13 @@ class Animal
     @state = "awake"
   end
 
-  def self.greet
-    puts "Sup slick sauce?"
-  end
-
   def eat(food)
     if @state == "awake"
       puts "NOM-nom!!"
-      puts "(a #{@kind} has eaten #{food})"
+      puts "a #{@kind} has eaten #{food}"
     else
       puts "SLEEPING"
     end
-    self
   end
 
   def sleep

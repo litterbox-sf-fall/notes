@@ -12,10 +12,6 @@ class Child < Parent
     @@grandchildren +=1
   end
 
-  def addToFamily(child)
-    @@family << child
-  end
-
   def self.getColors
     @@favColors
   end

@@ -1,37 +1,52 @@
 require 'spec_helper'
+require_relative '../child'
 
 describe Child do
 
-  before(:each) do
-
+  before(:context) do
+    @child = Child.new("ruby",1,"female")
   end
 
   describe "Initialization" do
-    xit "is an instance of the Child class" do
+    it "is an instance of the Child class" do
 
     end
-    xit "is assigned a name" do
+    it "is assigned a name" do
 
     end
-    xit "is assigned an age" do
+    it "is assigned an age" do
 
     end
-    xit "is assigned a gender" do
+    it "is assigned a gender" do
 
     end
-    xit "is assigned a favorite color" do
+    it "is assigned a favColor" do
+
+    end
+    it "should increment the children variable by 1 when created" do
+
+    end
+    it "should increment the grandchildren variable by 1 when created" do
 
     end
   end
 
-  describe "Growing up" do
-    xit "gets older by one year when the function is run" do
+  describe "#growUp" do
+    it "gets older by one year when the method is called" do
+
 
     end
   end
 
-  describe "Adding to the family" do
-    xit "gets added to the family" do
+
+  # BONUS
+  # For now, to get these tests to pass, have the last line of your 'talking' method be the text you want to display
+  # It is beyond the scope of this lab to try to use rspec to test what you 'puts' out so don't worry about that
+  describe "Talking" do
+    it "should return a 'Wahhh!' if the child's age is <2 " do
+
+    end
+    it "should return a message and include the favorite color when the age is over 2" do
 
 
     end

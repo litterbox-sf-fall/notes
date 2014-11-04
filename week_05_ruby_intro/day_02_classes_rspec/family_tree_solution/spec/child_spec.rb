@@ -1,4 +1,5 @@
 require 'spec_helper'
+require_relative '../child'
 
 describe Child do
 
@@ -27,7 +28,6 @@ describe Child do
       expect(Child.getColors).to include(@child.favColor)
     end
     it "should increment the children variable by 1 when created" do
-      p Parent.children
       expect(Parent.children).to eq(1)
     end
     it "should increment the grandchildren variable by 1 when created" do
@@ -49,13 +49,6 @@ describe Child do
     it "should return a message and include the favorite color when over 2" do
       3.times {@child.growUp}
       expect(@child.talk("Hello")).to eq("Hello, and my favorite color is #{@child.favColor}")
-    end
-  end
-
-  describe "Adding to the family" do
-    it "gets added to the family" do
-      @child.addToFamily(@child)
-      expect(Child.showFamily.size).to eq(1)
     end
   end
 

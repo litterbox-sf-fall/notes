@@ -1,41 +1,54 @@
-require 'spec_helper'
+require_relative 'spec_helper'
+require_relative '../grandparent'
 
 describe Grandparent do
 
-  before(:each) do
-
+  before(:context) do
+    @grandparent = Grandparent.new("marcia",60,"female")
   end
 
   describe "Initialization" do
-    xit "is an instance of the Grandparent class" do
+    it "is an instance of the Grandparent class" do
 
     end
-    xit "is assigned a name" do
+    it "is assigned a name" do
 
     end
-    xit "is assigned an age" do
+    it "is assigned an age" do
 
     end
-    xit "is assigned a gender" do
+    it "is assigned a gender" do
+
+    end
+  end
+
+  describe "class methods" do
+    it "should have a way to access the family variable" do
+
+    end
+    it "should have a way to access the grandchildren" do
 
     end
   end
 
   describe "Adding to the family" do
-    xit "gets added to the family" do
+    it "gets added to the family" do
+
 
     end
   end
 
   describe "Show family" do
-    xit "Should return an array" do
+    it "Should return an array" do
 
     end
 
-    # BONUS! Loop over the array returned by Grandparent.showFamily and see
+    # BONUS
+    # Loop over the array returned by Grandparent.showFamily and see
     # if the number of instance variables at each index is >= 3
-    xit "Should have at least three instance variables at every index of the array" do
+    it "Should have at least three instance variables at every index of the array" do
 
-    end
+
     end
   end
+end

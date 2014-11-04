@@ -20,12 +20,4 @@ describe Parent do
       expect(@parent.gender).to eq("male")
     end
   end
-
-  describe "Adding to the family" do
-    it "gets added to the family" do
-      @parent.addToFamily(@parent)
-      Parent.showFamily
-      expect(Parent.showFamily.size).to eq(1)
-    end
-  end
 end

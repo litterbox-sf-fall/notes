@@ -11,11 +11,4 @@ class Parent < Grandparent
     @@children
   end
 
-  def addToFamily(parent)
-    @@family << parent
-  end
-
 end
-
-# p = Parent.new("bob",32,"male")
-# p.addToFamily(p)

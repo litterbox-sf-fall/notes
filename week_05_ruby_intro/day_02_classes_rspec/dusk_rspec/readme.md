@@ -1,10 +1,12 @@
 ## Testing with rspec
 
-### What is rspec?
-
-### How does it work?
-
 ### How to get started
+
+Rspec is the testing framework we are going to be using for Ruby (including Rails). To get started:
+
+`gem install rspec` (you might have to `sudo` this depending on your machine settings)
+
+Once you have successfully installed rspec, create a new project:
 
 1. rspec --init (this will create a .rspec and spec/spec_helper.rb file)
 2. Inside your .rspec file make sure you have this text
@@ -57,21 +59,19 @@ describe "Startin" do
       expect(5).to eq(3)
     end
 
-    it "does something that is pending", :pending => true do
+    it "does something that is pending", pending: true do
       expect(5).to be < 3
     end
 
-    it "does something that is skipped", :skip => true do
-      expect(5).to be < 3
+    xit "does something that is pending because we used xit", do
+      expect(5).to be < 3 #this will be pending
     end
   end
 ```
-### Testing iterators
 
-```
-```
+### I'm getting errors!
 
-### Testing classes (what will be model testing)
-
-```
-```
+1. Make sure you have done `rspec --init` so that you have a .rspec file and a spec folder with a spec_helper.rb file
+2. Did you mean to do require_relative instead of require?
+3. If you do use require_relative, make sure you have the exact path
+4. 

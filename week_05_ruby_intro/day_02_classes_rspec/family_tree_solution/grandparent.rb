@@ -16,8 +16,8 @@ class Grandparent
     @@family
   end
 
-  def addToFamily(grandparent)
-    @@family << grandparent
+  def addToFamily(member)
+    @@family << member
   end
 
   def self.showFamily
@@ -34,6 +34,4 @@ class Grandparent
   end
 end
 
-# g = Grandparent.new("Sam",44,"male")
-# g.addToFamily(g)
 
