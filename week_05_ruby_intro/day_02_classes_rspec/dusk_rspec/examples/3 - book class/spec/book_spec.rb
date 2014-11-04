@@ -1,7 +1,5 @@
 require 'spec_helper'
 
-
-
 describe Book do
 
 # run one time only, before all of the examples in a group

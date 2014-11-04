@@ -10,5 +10,6 @@ class Dog
 end
 
 d = Dog.new("fido")
+d.bark
 
 

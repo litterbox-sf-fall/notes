@@ -89,6 +89,8 @@ class Person
 end
 
 elie =  Person.new("Elie Schoppik")
+elie =  Person.new("Elie Schoppik")
+elie =  Person.new("Elie Schoppik")
 elie.name
-p Person.populationList
+p Person.populationList.size
 Person.greet
