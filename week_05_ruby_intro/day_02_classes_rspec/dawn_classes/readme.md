@@ -345,4 +345,5 @@ Using super can DRY up our code by creating a copy of the parent class. In the e
 - Doesn't need the .rb file extension, but won't hurt if it's there.
 
 ###require_relative
-- Just like require, but looks for a relative path instead
+- Just like require, but looks for a relative path instead of a specific path for your ruby gems (like require does)
+- - Doesn't need the .rb file extension, but won't hurt if it's there.
